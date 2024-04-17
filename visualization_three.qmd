@@ -20,9 +20,9 @@ la_new_orleans_2020_04_01 <- read_csv("data/la_new_orleans_2020_04_01.csv")
 la_new_orleans_2020_04_01$year <- format(as.Date(la_new_orleans_2020_04_01$date), "%Y")
 #filter years and variable
 filtered_data_no <- la_new_orleans_2020_04_01 |>
-  filter(as.integer(year) >= 2011 & as.integer(year) <= 2018) |>
+  filter(as.integer(year) >= 2014 & as.integer(year) <= 2018) |>
   select(year, reason_for_stop, subject_race)
-write_csv(filtered_data_no, "data/la_new_orleans_2011_2018.csv")
+write_csv(filtered_data_no, "data/la_new_orleans_2014_2018.csv")
 
 
 #Clear Data: Burlington
@@ -31,9 +31,9 @@ vt_burlington_2023_01_26 <- read_csv("data/vt_burlington_2023_01_26.csv")
 vt_burlington_2023_01_26$year <- format(as.Date(vt_burlington_2023_01_26$date), "%Y")
 #filter years and variable
 filtered_data_vb <- vt_burlington_2023_01_26 |>
-  filter(as.integer(year) >= 2011 & as.integer(year) <= 2018) |>
+  filter(as.integer(year) >= 2014 & as.integer(year) <= 2018) |>
   select(year, reason_for_stop, subject_race)
-write_csv(filtered_data_vb, "data/vt_burlington_2011_2018.csv")
+write_csv(filtered_data_vb, "data/vt_burlington_2014_2018.csv")
 
 #Clear Data: Nashville
 tn_nashville_2020_04_01 <- read_csv("data/tn_nashville_2020_04_01.csv")
@@ -41,9 +41,9 @@ tn_nashville_2020_04_01 <- read_csv("data/tn_nashville_2020_04_01.csv")
 tn_nashville_2020_04_01$year <- format(as.Date(tn_nashville_2020_04_01$date), "%Y")
 #filter years and variable
 filtered_data_tn <- tn_nashville_2020_04_01 |>
-  filter(as.integer(year) >= 2011 & as.integer(year) <= 2018) |>
+  filter(as.integer(year) >= 2014 & as.integer(year) <= 2018) |>
   select(year, reason_for_stop, subject_race)
-write_csv(filtered_data_vb, "data/tn_nashville_2011_2018.csv")
+write_csv(filtered_data_vb, "data/tn_nashville_2014_2018.csv")
 
 
 ```
